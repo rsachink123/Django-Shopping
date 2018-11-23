@@ -1,0 +1,166 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>fairdeal.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<style>
+.contactform
+{
+  
+    float:left;
+
+    border-bottom:2px solid red;
+    border:5px solid yellow;
+    border-radius:5px;
+    padding:10px;
+    box-shadow:0px 0px 2px 1px blue;
+    background-color: lightgreen;
+}
+
+</style>
+  </head>
+<body>
+<body style=background-image:url('media/bg.jpg')>
+<!---<img src="media/banner6.png" width=100% height=200 alt='fairdeal banner'>-->
+
+
+<div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+     <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+     </ul>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+          <img src="media/banner6.png" alt="faideal" width="1366px" height="300">
+            <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/shop1.jpg" alt="fairdeal" width="1366" height="300">
+            <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/shop3.jpg" alt="fairdeal" width="1366" height="300">
+            <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+            </div>
+       </div>
+     </div>
+     <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+     </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+     </a>
+    </div>
+    </div>
+    
+
+
+
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">fairdeal.com</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus">Contact Us</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Men's Fashion
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="formal_shirt">Formal Shirts</a>
+        <a class="dropdown-item" href="formal_pant">Formal Pant</a>
+        <a class="dropdown-item" href="jean">Jeans</a>
+        <a class="dropdown-item" href="tshirt">TShirt</a>
+      
+      </li>
+      
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Women's Fashion
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="ethnicwear">Ethnic Wear</a>
+        <a class="dropdown-item" href="skirt">Skirt</a>
+        <a class="dropdown-item" href="beauty">Beauty Accessories</a>
+        <a class="dropdown-item" href="sandal">Sandals</a>
+        <a class="dropdown-item" href="handbag">Handbag</a>
+        </li>
+       <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Electronics
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="television">Television</a>
+        <a class="dropdown-item" href="camera">Camera</a>
+        <a class="dropdown-item" href="speaker">Speaker</a>
+        <a class="dropdown-item" href="airconditioner">Air Conditioner</a>
+        
+        </li>
+
+        <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >
+        Your Orders
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Your Account</a>
+        <a class="dropdown-item" href="#">Your Order</a>
+        <a class="dropdown-item" href="#">Your Wish List</a>
+        <a class="dropdown-item" href="#">Sign Out</a>
+        </li>
+        
+    <form class="form-inline">
+
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+
+
+<nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbar">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Sign In</a>
+
+
+    
+</div>
+</ul>
+</nav>
+<br>
+{% block content %}
+{% endblock %}
+
+
+</body>
+
+
+</html>

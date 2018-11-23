@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+  
+<div class="container">
+  <h3>List of Sandals</h3>
+  <p>This is the collection of Sandals.</p>
+{% for l in lst %}
+{% if l.available %}
+{{forloop.counter}}
+{{l.name}}
+{{l.price}}<br>
+{% endif %}
+
+
+
+{% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>

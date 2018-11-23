@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+  
+<div class="container">
+  <h3>Contact Us Form</h3>
+  <p>Address: SRT-45, Ameerpet, Hyderabad-500038<br>
+email: sachin.k.k@outlook.com <br>
+    contact no.: +91 991 976 6102
+     </p>
+<h4>Please use this form to express your feedback and for showing your product on this website</h4>
+<form name="form" action="" method="post">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit">Submit</button>
+<br>
+<br>
+</form>
+</div>
+
+{% endblock %}
+

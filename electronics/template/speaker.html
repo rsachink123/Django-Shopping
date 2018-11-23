@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+  
+<div class="container">
+  <h4>List of Speakers</h4>
+  <p>This is the collection of Speakers.</p>
+
+<table width=100% border=1>
+{% for l in lst %}
+<tr>
+<td width=20%><br>
+<h4>Name:{{l.name}}</h4><br>
+<img src="{{l.photo.url}}" alt="Speaker Photo" width=250 height=170>
+</td>
+<td width=80%>
+<h5>Product detail:</h5><br>
+<h5>Price:{{l.price}}<br>
+Quantity:{{l.stock}}<br>
+Available:{% if l.available %}
+Yes
+{% else %}
+No
+{% endif %}<br>
+Created:{{l.created}}<br>
+Updated:{{l.updated}}<br>
+Description:{{l.desc}}
+<a href='cart{{l.id}}'>Add to Cart</a>
+</h5>
+</td>
+</tr>
+{% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+  
+<div class="container">
+  <h3>Contact Us Form</h3>
+  <p>Address: XYZ<br>
+email: xxxxxxxx@outlook.com <br>
+    contact no.: +91 99x xxx xxxx
+     </p>
+<h4>Please use this form to express your feedback and for showing your product on this website</h4>
+<div class="contactform">
+<form name="form" action="" method="post">
+{% csrf_token %}
+{{form.as_p}}
+<button class="btn btn-primary">Search</button>
+<br>
+<br>
+</form>
+</div>
+</div>
+
+{% endblock %}
+
